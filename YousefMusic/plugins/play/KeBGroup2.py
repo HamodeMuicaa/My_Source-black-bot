@@ -100,7 +100,7 @@ async def aTari(client: Client, message: Message):
 @app.on_message(command(["‹ صور ›","صور"]) & filters.group)
 async def aTari(client: Client, message: Message):
     rl = random.randint(1,107)
-    url = f"https://t.me/LKKKKV/{rl}"
+    url = f"https://t.me/c1xxv/{rl}"
     await message.reply_photo(url,caption="≭︰تم اختيار صورة لك .",
     reply_markup=InlineKeyboardMarkup(
             [
@@ -148,7 +148,7 @@ async def aTari(client: Client, message: Message):
 @app.on_message(command(["‹ اقتباسات ›", "اقتباسات"]) & filters.group)
 async def aTari(client: Client, message: Message):
     rl = random.randint(2,90)
-    url = f"https://t.me/LoreBots9/{rl}"
+    url = f"https://t.me/c1xxv/{rl}"
     await message.reply_photo(url,caption="≭︰تم اختيار اقتباس لك .",
     reply_markup=InlineKeyboardMarkup(
             [

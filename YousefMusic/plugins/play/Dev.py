@@ -34,15 +34,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-OWNER_ID = 6094238403
+OWNER_ID = 5838178233
 OWNER = getenv("OWNER")
 
 
 
-@app.on_message(filters.command(["مطور السورس", "• مطور السورس •","يوسف"], ""))
+@app.on_message(filters.command(["مطور السورس", "• مطور السورس •","حسين"], ""))
 async def dev(client: Client, message: Message):
      bot_username = client.me.username
-     user = await client.get_chat(6094238403)
+     user = await client.get_chat(5838178233)
      name = user.first_name
      username = user.username 
      bio = user.bio
@@ -74,15 +74,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-OWNER_ID = 6717529449
+OWNER_ID = 7069250607
 OWNER = getenv("OWNER")
 
 
 
-@app.on_message(filters.command(["مبرمج السورس", "• مبرمج السورس •", "فطومه","فطوم"], ""))
+@app.on_message(filters.command(["مبرمج السورس", "• مبرمج السورس •", "حمد","حمودي"], ""))
 async def dev(client: Client, message: Message):
      bot_username = client.me.username
-     user = await client.get_chat(6763556715)
+     user = await client.get_chat(7069250607)
      name = user.first_name
      username = user.username 
      bio = user.bio

@@ -43,7 +43,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/yousef1yt/My_Source-black-bot")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/HamodeMuicaa/yousef_blyek_muic")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN")
 CH_US = getenv("CH_US", "cecrr")
@@ -53,7 +53,7 @@ YAFA_CHANNEL = getenv("YAFA_CHANNEL", "https://t.me/cecrr")# Fill this variable 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/cecrr")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/cecrr")
 CHANNEL_NAME = getenv("CHANNEL_NAME", "• . 𝖠 ' 𝟣𝟣𝟣 . •")
-CHANNEL_LINK = getenv("CHANNEL_LINK", "cecrr")
+CHANNEL_LINK = getenv("CHANNEL_LINK", "c1xxv")
 
 OWNER_CHANNEL = getenv("OWNER_CHANNEL", "https://t.me/FF4C4")
 

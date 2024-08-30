@@ -34,7 +34,7 @@ async def ihd(client: Client, message: Message):
 @app.on_message(filters.command(["صوره", "✨صوره", "صورهه", "صور"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,50)
-    url = f"https://t.me/vnnkli/{rl}"
+    url = f"https://t.me/c1xxv/{rl}"
     await client.send_photo(message.chat.id,url,caption="🐉 ¦ تـم اختيـار صوره لـك",parse_mode=enums.ParseMode.HTML)
     reply_markup=InlineKeyboardMarkup(
             [
@@ -78,7 +78,7 @@ async def ihd(client: Client, message: Message):
 @app.on_message(filters.command(["✨اقتباسات", "اقتباس"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
-    url = f"https://t.me/LoreBots9/{rl}"
+    url = f"https://t.me/c1xxv/{rl}"
     await client.send_photo(message.chat.id,url,caption="🐉 ¦ تـم اختيـار اقتباس لـك",parse_mode=enums.ParseMode.HTML)
     reply_markup=InlineKeyboardMarkup(
             [
@@ -106,7 +106,7 @@ async def ihd(client: Client, message: Message):
 @app.on_message(filters.command(["✨صور بنات", "صور بنات"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
-    url = f"https://t.me/vvyuol/{rl}"
+    url = f"https://t.me/c1xxv/{rl}"
     await client.send_photo(message.chat.id,url,caption="🐉 ¦ تـم اختيـار صوره لـك",parse_mode=enums.ParseMode.HTML)
     reply_markup=InlineKeyboardMarkup(
             [
@@ -120,7 +120,7 @@ async def ihd(client: Client, message: Message):
 @app.on_message(filters.command(["صور شباب", "✨صور شباب"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
-    url = f"https://t.me/vgbmm/{rl}"
+    url = f"https://t.me/c1xxv/{rl}"
     await client.send_photo(message.chat.id,url,caption="🐉 ¦ تـم اختيـار صوره لـك",parse_mode=enums.ParseMode.HTML)
     reply_markup=InlineKeyboardMarkup(
             [

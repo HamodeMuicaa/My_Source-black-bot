@@ -8,7 +8,7 @@ from YousefMusic.utils.database import get_served_chats
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-START_IMG_URL = "https://telegra.ph/file/0b282899c1d44a15d0845.jpg"
+START_IMG_URL = "https://te.legra.ph/file/9c0db0c82db9bb4607b80.jpg"
 
 
 MESSAGE = f"""- بوت تشغيل الميوزك    بالقنوات والجروبات 

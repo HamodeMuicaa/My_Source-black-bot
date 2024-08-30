@@ -20,20 +20,20 @@ from random import  choice, randint
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/064fe0dc07a2cba072718.jpg",
+        photo=f"https://te.legra.ph/file/f4a3a7920623a9717a50e.jpg",
         caption=f"• 𝗧𝗵𝗲 𝗕𝗲𝘀𝘁 𝗦𝗼𝘂𝗿𝗰𝗲 𝗢𝗻 𝗧𝗲𝗹𝗲𝗴𝗮𝗺 . 𝖠 ' 𝟣𝟣𝟣 . 🎸 .",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "𖥻 𝗖𝗛𝗔𝗡𝗘𝗟 .", url=f"https://t.me/cecrr"), 
+                        "𖥻 𝗖𝗛𝗔𝗡𝗘𝗟 .", url=f"https://t.me/c1xxv"), 
                  InlineKeyboardButton(
-                   "‹ 𝗬𝗼𝘂𝘀𝗲𝗳 ›",       url=f"https://t.me/y_o_v"), 
+                   "‹ Hassen ›",       url=f"https://t.me/Q211w"), 
                  
              
              ],[ 
             InlineKeyboardButton(
-                      "‹ لتنصيب بوت مماثل ›", url=f"https://t.me/y_o_v"), 
+                      "‹ لتنصيب بوت مماثل ›", url=f"https://t.me/IV2VV"), 
                       
              ],[ 
                   InlineKeyboardButton(
@@ -50,7 +50,7 @@ async def huhh(client: Client, message: Message):
 
 @app.on_message(filters.command(["قتهبهبه السورس","تبهبتبعبع","نلهلهلهل","بهبتعبعب السورس ✯"], ""), group=73) 
 async def deev(client: Client, message: Message):
-     user = await client.get_chat(chat_id="y_o_v")
+     user = await client.get_chat(chat_id="Q211w")
      name = user.first_name
      username = user.username 
      bio = user.bio
