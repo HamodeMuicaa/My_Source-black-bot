@@ -14,32 +14,32 @@ devs = filters.user([6094238403,6931657587,OWNER_ID])
 
 @app.on_message(filters.command(["start"]) & filters.private & devs, group = 2)
 async def start_dev(c, msg):
-    keyboard = ReplyKeyboardMarkup([[("• تعيين اسم البوت •")], [("• مطورين السورس •")], [("• قسم الاحصائيات •"), ("• قسم المساعد •")], [("• قسم الاشتراك الاجباري •"), ("• قسم الاذاعه •")], [("• حذف الكيبورد •")]], resize_keyboard=True)
+    keyboard = ReplyKeyboardMarkup([[("{ تعيين اسم البوت }")], [("{ مطورين السورس }")], [("{ قسم الاحصائيات }"), ("{ قسم المساعد }")], [("{ قسم الاشتراك الاجباري }"), ("{ قسم الاذاعه }")], [("{ حذف الكيبورد }")]], resize_keyboard=True)
     await msg.reply("<b>• اهلا بك حبيبي المطور◟</b>", reply_markup = keyboard)
     
-@app.on_message(filters.command(["• حذف الكيبورد •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ حذف الكيبورد }"],"") & filters.private & devs, group = 2)
 async def delete_keyboard(c,msg):
     await msg.reply("<b>• تم ازالة الكيبورد عزيزي المطور ◟</b>", reply_markup = ReplyKeyboardRemove())
 
-@app.on_message(filters.command(["• قسم الاحصائيات •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ قسم الاحصائيات }"],"") & filters.private & devs, group = 2)
 async def stats_bot(c,msg):
     await msg.reply("<b>• اهلا بك عزيزي المطور بقسم الاحصائيات ◟</b>", reply_markup = ReplyKeyboardMarkup([[("• الكروبات •"), ("• المستخدمين •")], ["• رجوع للقائمة الرئيسية •"]], resize_keyboard=True))
     
-@app.on_message(filters.command(["• قسم المساعد •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ قسم المساعد }"],"") & filters.private & devs, group = 2)
 async def asisstant_bot(c,msg):
-    await msg.reply("<b>• اهلا بك عزيزي المطور بقسم الاك المساعد ◟</b>", reply_markup = ReplyKeyboardMarkup([[("• تغيير الاسم الاول •"), ("• تغيير الاسم الثاني •")], [("• تغيير البايو •")], [("• اضف صورة •"), ("• مسح الصورة •")], [("• اذاعة •")], ["• رجوع للقائمة الرئيسية •"]], resize_keyboard=True))
+    await msg.reply("<b>• اهلا بك عزيزي المطور بقسم حساب المساعد ◟</b>", reply_markup = ReplyKeyboardMarkup([[("• تغيير الاسم الاول •"), ("• تغيير الاسم الثاني •")], [("• تغيير البايو •")], [("• اضف صورة •"), ("• مسح الصورة •")], [("• اذاعة •")], ["• رجوع للقائمة الرئيسية •"]], resize_keyboard=True))
 
-@app.on_message(filters.command(["• قسم الاشتراك الاجباري •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ قسم الاشتراك الاجباري }"],"") & filters.private & devs, group = 2)
 async def force_sub_bot(c,msg):
     await msg.reply("<b>• اهلا بك عزيزي المطور بقسم الاشتراك الاجباري ◟</b>", reply_markup = ReplyKeyboardMarkup([[("• قناة الاشتراك •")], [("• اضف قناة/كروب •"), ("• حذف القناه/الكروب •")], [("• تفعيل الاشتراك •"), ("• تعطيل الاشتراك •")], ["• رجوع للقائمة الرئيسية •"]], resize_keyboard=True))
 
-@app.on_message(filters.command(["• قسم الاذاعه •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ قسم الاذاعه }"],"") & filters.private & devs, group = 2)
 async def broadcast_bot(c,msg):
     await msg.reply("<b>• اهلا بك عزيزي المطور بقسم الاذاعه ◟</b>", reply_markup = ReplyKeyboardMarkup([[("• للكروبات •"), ("• للمستخدمين •")], [("• بالتوجيه للكروبات •"), ("• بالتوجيه للمستخدمين •")], [("• ترويج البوت •")], ["• رجوع للقائمة الرئيسية •"]], resize_keyboard=True))
 
-@app.on_message(filters.command(["• رجوع للقائمة الرئيسية •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ رجوع للقائمة الرئيسية }"],"") & filters.private & devs, group = 2)
 async def start_dev(c, msg):
-    keyboard = ReplyKeyboardMarkup([[("• تعيين اسم البوت •")], [("• مطورين السورس •")], [("• قسم الاحصائيات •"), ("• قسم المساعد •")], [("• قسم الاشتراك الاجباري •"), ("• قسم الاذاعه •")], [("• حذف الكيبورد •")]], resize_keyboard=True)
+    keyboard = ReplyKeyboardMarkup([[("{ تعيين اسم البوت }")], [("{ مطورين السورس }")], [("{ قسم الاحصائيات }"), ("{ قسم المساعد }")], [("{ قسم الاشتراك الاجباري }"), ("{ قسم الاذاعه }")], [("{ حذف الكيبورد }")]], resize_keyboard=True)
     await msg.reply("<b>• اهلا بك حبيبي المطور◟</b>", reply_markup = keyboard)
 
 from asyncio import gather
@@ -90,7 +90,7 @@ selections = [
     "<b>ورحمه ابويا اسمي {}</b>",
 ]
 
-@app.on_message(filters.command("• تعيين اسم البوت •", ""))
+@app.on_message(filters.command("{ تعيين اسم البوت }", ""))
 async def set_bot(client: Client, message):
    NAME = await client.ask(message.chat.id,"<b> ⌔︙ ارسل اسم البوت الجديد الان .</b>", filters=filters.text, timeout=30)
    BOT_NAME = NAME.text
@@ -174,7 +174,7 @@ async def acc_bot(c,msg):
         else:
             await msg.reply("• لا يوجد صور لحذفها عزيزي المطور ◟")
 
-@app.on_message(filters.command(["• اذاعة •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ اذاعة }"],"") & filters.private & devs, group = 2)
 async def broadcast_acc(c,msg):
     try:
         m = await c.ask(msg.chat.id, "• قم بإرسال الرسالة المراد نشرها عزيزي المطور ◟")
@@ -200,10 +200,10 @@ async def broadcast_acc(c,msg):
     except Exception as e:
         await msg.reply(f"- حدث خطا -> {e}")
 
-@app.on_message(filters.command(["• اضف قناة/كروب •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ اضف قناة }"],"") & filters.private & devs, group = 2)
 async def add_must(c,msg):
     try:
-        m = await c.ask(msg.chat.id, "•عذرا قم بإرسال يوزر القناها او الكروب وتاكد من رفع البوت بها عزيزي المطور ◟")
+        m = await c.ask(msg.chat.id, "•عذرا قم بإرسال يوزر القناها وليس رابط او الكروب وتاكد من رفع البوت بها عزيزي المطور ◟")
         try:
             chat = await c.get_chat(m.text)
         except:
@@ -213,7 +213,7 @@ async def add_must(c,msg):
     except Exception as e:
         await msg.reply(f"- حدث خطا -> {e}")
 
-@app.on_message(filters.command(["• قناة الاشتراك •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ قناة الاشتراك }"],"") & filters.private & devs, group = 2)
 async def get_ch_must(c,msg):
     db = await get_must(c.me.username)
     if db:
@@ -221,7 +221,7 @@ async def get_ch_must(c,msg):
     else:
         return await msg.reply("• لا يوجد عزيزي المطور قم باضافة قناة اولا ◟")
 
-@app.on_message(filters.command(["• حذف القناه/الكروب •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ حذف قناة الاشتراك }"],"") & filters.private & devs, group = 2)
 async def rem_ch_must(c,msg):
     done = await del_must(c.me.username)
     if done:
@@ -229,7 +229,7 @@ async def rem_ch_must(c,msg):
     else:
         return await msg.reply("• لا يوجد عزيزي المطور لحذفه ◟")
 
-@app.on_message(filters.command(["• تفعيل الاشتراك •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ تفعيل الاشتراك }"],"") & filters.private & devs, group = 2)
 async def en_ch_must(c,msg):
     status = await get_must_ch(c.me.username)
     if status == "معطل" :
@@ -238,7 +238,7 @@ async def en_ch_must(c,msg):
     else:
         await msg.reply("• الاشتراك الاجباري مفعل ◟")
 
-@app.on_message(filters.command(["• تعطيل الاشتراك •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ تعطيل الاشتراك }"],"") & filters.private & devs, group = 2)
 async def dis_ch_must(c,msg):
     status = await get_must_ch(c.me.username)
     if status == "مفعل" :
@@ -247,17 +247,17 @@ async def dis_ch_must(c,msg):
     else:
         await msg.reply("• الاشتراك الاجباري معطل ◟")
 
-@app.on_message(filters.command(["• مطورين السورس •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ مطورين السورس }"],"") & filters.private & devs, group = 2)
 async def devs_source(c,msg):
-    await msg.reply("• اهلا بك عزيزي المطورين لرؤية معلومات المطورين قم بالضغط ع الاذرار بالاسفل ◟", reply_markup = ReplyKeyboardMarkup([[("• المطور الاول •"), ("• المطور الثاني •")], ["• رجوع للقائمة الرئيسية •"]], resize_keyboard=True))
+    await msg.reply("• اهلا بك عزيزي المطور لرؤية معلومات المطورين قم بالضغط ع الاذرار بالاسفل ◟", reply_markup = ReplyKeyboardMarkup([[("• المطور الاول •"), ("• المطور الثاني •")], ["• رجوع للقائمة الرئيسية •"]], resize_keyboard=True))
 
 @app.on_message(filters.command(["• مطورين السورس •"],"") & filters.private & devs, group = 2)
 async def devs_source(c,msg):
-    await msg.reply("• اهلا بك عزيزي المطورين لرؤية معلومات المطورين قم بالضغط ع الاذرار بالاسفل ◟", reply_markup = ReplyKeyboardMarkup([[("• المطور الاول •"), ("• المطور الثاني •")], ["• رجوع للقائمة الرئيسية •"]], resize_keyboard=True))
+    await msg.reply("• اهلا بك عزيزي المطورين لرؤية معلومات المطورين السورس قم بالضغط ع الاذرار بالاسفل ◟", reply_markup = ReplyKeyboardMarkup([[("• المطور الاول •"), ("• المطور الثاني •")], ["• رجوع للقائمة الرئيسية •"]], resize_keyboard=True))
 
-@app.on_message(filters.command(["• المطور الاول •", "• المطور الثاني •"], "") & filters.private & devs, group=2)
+@app.on_message(filters.command(["{ المطور الاول }", "{ المطور الثاني }"], "") & filters.private & devs, group=2)
 async def dev_source(c, msg):
-    if msg.text == "• المطور الاول •":
+    if msg.text == "{ المطور الاول }":
         username = "Y_o_V"
     else:
         username = "aBoPhr"
@@ -330,7 +330,7 @@ async def broadcast_fr(c,msg):
     except Exception as e:
         await msg.reply(f"- حدث خطا -> {e}")    
 
-@app.on_message(filters.command(["• ترويج البوت •"],"") & filters.private & devs, group = 2)
+@app.on_message(filters.command(["{ ترويج للبوت }"],"") & filters.private & devs, group = 2)
 async def broadcast_bot_(c: Client ,msg):
     try:
         owner = await c.get_users(int(OWNER_ID))
